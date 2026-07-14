@@ -1,14 +1,11 @@
-<p align="left">
-  <img src="onka-lockup.png" alt="ONKA" width="360">
+<p align="center">
+  <img src="onka-banner.png" alt="ONKA · Engineering Smarter Businesses" width="100%">
 </p>
+
+## ONKA
 
 **Engineering Smarter Businesses.**
 
-ONKA helps businesses automate operations and accelerate growth through AI, custom software, and intelligent business systems.
-
-- AI Automation · AI Agents · Customer Support AI
-- Custom Software · Dashboards · Portals · CRM & Booking Systems
-- Workflow Automation · API Development · Data Synchronization
-- Growth Systems · Lead Generation · Reporting
+We build AI automation and custom software for businesses that want their operations to run themselves.
 
 Montréal, CA · [onkalabs.com](https://www.onkalabs.com)
