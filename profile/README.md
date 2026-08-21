@@ -32,17 +32,18 @@ signer receives a secure capability link and never creates an account.
 
 Each PDF remains an individual document and can be downloaded separately after execution. A package groups
 multiple documents so the assigned recipients can complete them in one signing flow. Sign does not require a
-CRM company or client record for a standalone package. HQ can originate its own agreement packages through
-the same engine, while client Portal surfaces expose only the relevant contract status and completed files.
+CRM company or client record for a standalone package. HQ integration follows standalone acceptance and will
+originate its agreement packages through the same engine. Client Portal surfaces will expose only the relevant
+contract status and completed files.
 
 The alpha also carries ordered signing, durable invitation receipts, scheduled reminders, append-only
 evidence, retry-safe completion, independently verified Drive artifacts, tenant API keys, signed webhooks,
 and explicit user-facing refusal states. Sign does not save reusable personal signatures and does not sign
 automatically on anyone's behalf.
 
-Alpha means the reviewed application and production data boundary are released while ONKA validates the full
-real-document flow with Josh, Steven, and external email recipients before beta. It does not mean public
-signup, automatic signing, or notarisation.
+Alpha means the reviewed application and production data boundary are released for controlled acceptance,
+not yet production-accepted. ONKA will validate the full real-document flow with Josh, Steven, and external
+email recipients before beta. It does not mean public signup, automatic signing, or notarisation.
 
 ### Analytics integration
 
