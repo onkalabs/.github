@@ -20,7 +20,21 @@ This organization contains ONKA's products, shared platform code, public web pro
 | Monitor | Fleet health, uptime and operational evidence for ONKA systems and client sites. |
 | Provision | Idempotent registration and installation workflows across ONKA infrastructure. |
 | Identity | Shared access foundation for approved client-facing systems. |
-| Sign | Document signing, evidence and verification services. |
+| [Sign](https://github.com/onkalabs/sign) | Production alpha for document execution. Authenticated senders prepare multi-document packages, order signers, place fields, and send invitations. Signers use secure links without logging in. Execution evidence is append-only, completed PDFs are hash-verified in Drive, and client Portal surfaces show contract status rather than the Sign product. [Open Sign](https://sign.onkalabs.com). |
+
+### ONKA Sign alpha
+
+ONKA Sign 0.1.0 Alpha is ONKA's standalone agreement-execution system and ONKA is its first customer. It
+extracts the signing engine formerly embedded in HQ and Pay into one production owner. The sender application
+requires an approved ONKA login. Every signer receives a capability link and never creates an account.
+
+The alpha supports ordered multi-document packages, ordered signers, signature, initials, date and text
+fields, durable invitation receipts, scheduled reminders, append-only evidence, retry-safe completion,
+independently verified Drive artifacts, tenant API keys, signed webhooks, an HQ read projection, and a
+contract-only Portal projection. The former Pay signing route is retired.
+
+Alpha means ONKA is validating the complete flow on its own agreements before broader client use. It does not
+mean public signup, a general document editor, or notarisation.
 
 ### Analytics integration
 
