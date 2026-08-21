@@ -20,21 +20,30 @@ This organization contains ONKA's products, shared platform code, public web pro
 | Monitor | Fleet health, uptime and operational evidence for ONKA systems and client sites. |
 | Provision | Idempotent registration and installation workflows across ONKA infrastructure. |
 | Identity | Shared access foundation for approved client-facing systems. |
-| [Sign](https://github.com/onkalabs/sign) | Production alpha for document execution. Authenticated senders prepare multi-document packages, order signers, place fields, and send invitations. Signers use secure links without logging in. Execution evidence is append-only, completed PDFs are hash-verified in Drive, and client Portal surfaces show contract status rather than the Sign product. [Open Sign](https://sign.onkalabs.com). |
+| [Sign](https://github.com/onkalabs/sign) | Standalone document execution. Authenticated senders upload PDFs, add any recipients by email, order signers, place fields, and send invitations. Signers use secure links without logging in. [Open Sign](https://sign.onkalabs.com) or read the [0.2.0 Alpha release](https://github.com/onkalabs/sign/releases/tag/sign-v0.2.0-alpha.0). |
 
 ### ONKA Sign alpha
 
-ONKA Sign 0.1.0 Alpha is ONKA's standalone agreement-execution system and ONKA is its first customer. It
+ONKA Sign 0.2.0 Alpha is ONKA's standalone document-execution application, and ONKA is its first customer. It
 extracts the signing engine formerly embedded in HQ and Pay into one production owner. The sender application
-requires an approved ONKA login. Every signer receives a capability link and never creates an account.
+requires an approved ONKA login. A sender can upload one or more PDFs, enter any signer's email address, order
+the recipients, and place signature, initials, name, signed-date, text, or checkbox fields on the pages. Every
+signer receives a secure capability link and never creates an account.
 
-The alpha supports ordered multi-document packages, ordered signers, signature, initials, date and text
-fields, durable invitation receipts, scheduled reminders, append-only evidence, retry-safe completion,
-independently verified Drive artifacts, tenant API keys, signed webhooks, an HQ read projection, and a
-contract-only Portal projection. The former Pay signing route is retired.
+Each PDF remains an individual document and can be downloaded separately after execution. A package groups
+multiple documents so the assigned recipients can complete them in one signing flow. Sign does not require a
+CRM company or client record for a standalone package. HQ integration follows standalone acceptance and will
+originate its agreement packages through the same engine. Client Portal surfaces will expose only the relevant
+contract status and completed files.
 
-Alpha means ONKA is validating the complete flow on its own agreements before broader client use. It does not
-mean public signup, a general document editor, or notarisation.
+The alpha also carries ordered signing, durable invitation receipts, scheduled reminders, append-only
+evidence, retry-safe completion, independently verified Drive artifacts, tenant API keys, signed webhooks,
+and explicit user-facing refusal states. Sign does not save reusable personal signatures and does not sign
+automatically on anyone's behalf.
+
+Alpha means the reviewed application and production data boundary are released for controlled acceptance,
+not yet production-accepted. ONKA will validate the full real-document flow with Josh, Steven, and external
+email recipients before beta. It does not mean public signup, automatic signing, or notarisation.
 
 ### Analytics integration
 
